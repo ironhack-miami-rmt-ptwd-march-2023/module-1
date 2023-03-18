@@ -2,16 +2,16 @@
 
 const pet = "snake"; // string
 const animals = ["dog", "cat", "fish"];
-const mixedArr = [
-  3, 
-  "fish", 
-  true, 
-  [], 
-  {name: "sandra"}, 
-  "", 
-  null, 
-  ["table", "chair"]
-];
+// const mixedArr = [
+//   3, 
+//   "fish", 
+//   true, 
+//   [], 
+//   {name: "sandra"}, 
+//   "", 
+//   null, 
+//   ["table", "chair"]
+// ];
 
 // arrays are zero indexed
 
@@ -53,3 +53,65 @@ console.log(animals); // ["monkey", "dog", "lion"]
 
 animals.shift();
 console.log(animals); // [dog", "lion"]
+
+
+// iterating over array
+
+const mixedArr = [
+  3,                       // 0 
+  "fish",                  // 1
+  true, 
+  [], 
+  {name: "sandra"}, 
+  "", 
+  null, 
+  ["table", "chair"]      // 7
+];
+
+// for loop
+
+console.log(mixedArr.length);
+
+// console.log(mixedArr[8])
+
+for (let i=0; i < mixedArr.length; i++){
+  console.log(`el: ${mixedArr[i]}`)
+}
+
+mixedArr.forEach(function(element){
+  console.log("element is: ", element)
+})
+
+const fruits = ["apple", "orange", "plum"];
+for (let fruit of fruits){
+  console.log(fruit);
+}
+
+// Different ways to copy the array
+// 1. spread operator
+
+const originalArr = [1, 2, 3];
+console.log(`original: ${originalArr}`)
+
+const copyOfOriginalArr = [...originalArr];
+console.log(`copy: ${copyOfOriginalArr}`);
+
+// 2. concat()
+
+const fruits1 = ["apple", "orange", "plum"];
+const fruitsUpdated = fruits1.concat("peach");
+console.log(fruits1); // "apple", "orange", "plum"
+console.log(fruitsUpdated); // "apple", "orange", "plum", "peach"
+
+const berries = ["strawberries", "blueberries"];
+const mergedArr = fruits1.concat(berries);
+console.log(mergedArr); // ["apple", "orange", "plum", "strawberries", "blueberries"]
+
+const mergedArr2 = [...fruits1, ...berries];
+console.log(mergedArr2);
+
+// isArray()
+
+const numbers = [1, 2, 3, 4, 5];
+
+console.log(Array.isArray(numbers)); // true
