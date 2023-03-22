@@ -36,7 +36,9 @@ let hacker1InCaps = "";
 for (let i = 0; i < hacker1.length; i++) {
   hacker1InCaps += hacker1[i].toUpperCase();
   // If we are not at the last character
-  if(i !== hacker1.length-1) hacker1InCaps+= " "
+  if(i !== hacker1.length-1) {
+    hacker1InCaps+= " ";
+  }
 }
 
 // the other solution is to use .trim() to get rid of the empty spaces
