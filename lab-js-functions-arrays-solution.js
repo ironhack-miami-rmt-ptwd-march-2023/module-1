@@ -166,3 +166,109 @@ function maxOfTwoNumbers(num1, num2) {
   
     return Number(avgValue);
   }
+
+  // ***********************************************************************************************
+// Iteration #5: Unique arrays
+// ***********************************************************************************************
+
+const wordsUnique = [
+  'crab',
+  'poison',
+  'contagious',
+  'simple',
+  'bring',
+  'sharp',
+  'playground',
+  'poison',
+  'communion',
+  'simple',
+  'bring'
+];
+
+function uniquifyArray(words) {
+  if (!words.length) {
+    return null;
+  }
+  
+  let uniqueArr = [];
+  
+  //   for (let i = 0; i < words.length; i++) {
+  //     let word = words[i];
+  //     // indexOf() => returns 1 (true) if the word already exists in the array
+  //     // indexOf() => returns -1 (false) if the word doesn't exist in the array
+  //     if (uniqueArr.indexOf(word) < 0) {
+  //       uniqueArr.push(word);
+  //     }
+  //   }
+
+  for (let word of words) {
+  
+    if (!uniqueArr.includes(word)) {
+       uniqueArr.push(word);
+    }
+    
+  }
+  
+  return uniqueArr;
+};
+
+// ***********************************************************************************************
+// Iteration #6: Find elements
+// ***********************************************************************************************
+
+const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
+
+// function doesWordExist(arr, word){
+//   if (arr.length === 0) {
+//     return null;
+//   }
+
+//   for (let el of arr){
+//     if (el === word) {
+//       return true;
+//     }
+//   }
+  
+//   return false;
+// }
+
+// the shortest and the cleanest:
+function doesWordExist(arr, word) {
+  if (arr.length === 0) {
+    return null;
+  }
+  
+  return arr.includes(word);
+}
+
+// ***********************************************************************************************
+// Iteration #7: Count repetition
+// ***********************************************************************************************
+
+const wordsCount = [
+  'machine',
+  'matter',
+  'subset',
+  'trouble',
+  'starting',
+  'matter',
+  'eating',
+  'matter',
+  'truth',
+  'disobedience',
+  'matter'
+];
+
+function howManyTimes(arr, word) {
+  let count = 0;
+
+  for (let el of arr) {
+
+    if (el === word) {
+      count++;
+    }
+    
+  }
+  
+  return count;
+}
