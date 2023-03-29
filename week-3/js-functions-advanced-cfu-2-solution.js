@@ -31,5 +31,35 @@ function performArithmeticOperation(num1, num2, callback){
   console.log(performArithmeticOperation(7, 7, multiply)); // 49
   
   console.log(performArithmeticOperation(21, 7, divide)); // 20
+
+
+// Challenge 2
+// Create a function that takes in a string and a callback function as parameters.
+// The function should split the string into words and apply the callback function to each word.
+// The callback function should perform a simple operation (e.g. capitalization, adding a suffix) on each word.
+// Invoke the function with different strings and callback functions.
   
-  
+function processWords(str, callback) {
+  const words = str.split(" ");
+  const processedWords = [];
+  for (let i = 0; i < words.length; i++) {
+    const processedWord = callback(words[i]);
+    processedWords.push(processedWord);
+  }
+  return processedWords.join(" ");
+}
+
+function capitalize(word) {
+  return word.charAt(0).toUpperCase() + word.slice(1);
+}
+
+function addSuffix(word) {
+  return word + "-ed";
+}
+
+const sentence1 = "hello world";
+const sentence2 = "the quick brown fox";
+const capitalizedSentence = processWords(sentence1, capitalize);
+const suffixedSentence = processWords(sentence2, addSuffix);
+console.log(capitalizedSentence); // "Hello World"
+console.log(suffixedSentence); // "the-ed quick-ed brown-ed fox-ed"
