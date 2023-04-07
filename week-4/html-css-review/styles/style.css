@@ -1,0 +1,16 @@
+h1 {
+    color: red;
+}
+
+.lorem-test {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.yellow-background {
+    background-color: rgb(204, 204, 163);
+}
+
+#about-me {
+    color: rgb(26, 26, 87);
+    font-style: italic;
+}
