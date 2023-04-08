@@ -1,14 +1,21 @@
+/* Root element font-size serves as a reference for the `rem` unit*/
+
 html {
     font-size: 10px;
 }
+
+/*as html is parent of "h1", that means it will use it as a root when calculating the size */
 
 h1 {
     font-size: 3rem; /* 3x10 = 30px */
 }
 
+/* Font size of the parent element serves as the reference for the `em` unit*/
+
 ul {
     font-size: 20px;
 }
+/*as ul is parent of "li", that means it will use it as a root when calculating the size */
 
 li {
     font-size: 0.8em; /* 20px x 0.8 ==> ? */
