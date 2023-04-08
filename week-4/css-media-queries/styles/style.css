@@ -1,0 +1,40 @@
+body {
+    background-color: white;
+}
+
+.details {
+    font-size: 20px;
+    font-weight:200;
+}
+
+/* from 320px and up */
+@media (min-width: 320px){
+    body {
+        background-color: blue;
+    }
+}
+
+
+/* from 768px and up */
+@media (min-width: 768px){
+    body {
+        background-color: green;
+        color: white;
+    }
+}
+
+/* from 1024px and up */
+@media (min-width: 1024px){
+    body {
+        background-color: yellow;
+        color: rgb(218, 110, 110);
+    }
+}
+
+/* from 850px to 950px */
+@media (min-width: 850px) and (max-width:950px) {
+    body {
+        background-color: purple;
+        color: white;
+    }
+}

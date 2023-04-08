@@ -1,0 +1,15 @@
+html {
+    font-size: 10px;
+}
+
+h1 {
+    font-size: 3rem; /* 3x10 = 30px */
+}
+
+ul {
+    font-size: 20px;
+}
+
+li {
+    font-size: 0.8em; /* 20px x 0.8 ==> ? */
+}

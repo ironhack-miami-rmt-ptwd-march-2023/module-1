@@ -1,0 +1,32 @@
+/* ul > li {
+    width: 100px;
+    height: 50px;
+    color: blue;
+} */
+
+
+#menu > li {
+    width: 100px;
+    height: 50px;
+    color: blue;
+}
+
+ul li em {
+    color: red;
+}
+
+#former {
+    background-color: aqua;
+}
+
+#former + div {
+    background-color: yellow;
+}
+
+h1, h3, h5 {
+    color: rgb(118, 118, 192);
+}
+
+h4, h6, div > p {
+    color: pink;
+}
