@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+
+    <p id="paragraph">
+        My name is Ana. And here I will tell you some things about me.
+    </p>
+    
+    <a href="#" id="google-link" class="link">Google</a>
+  
+    <button id="add-comment-button">Add comment</button>
+  
+    <div id="content">
+
+        <h2 id="title">Subtitle</h2>
+
+        <ul id="item-list">
+            <li>
+            Item 1
+            <button class="delete-item-button">🗑</button>
+            </li>
+        </ul>
+    </div>
+  
+    <div>
+        <label for="item-input">Item to be added:</label>
+        <input id="item-input" name="item-input" type="text" />
+        <button id="add-item-button">Add item</button>
+    </div>
+
+    <!-- load JS file last when DOM already loaded so you can access and manipulate with the DOM elements -->
+    <script src="./src/index.js"></script>
+</body>
+</html>
