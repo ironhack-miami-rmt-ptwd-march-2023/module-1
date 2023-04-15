@@ -19,14 +19,13 @@ window.onload = function () {
     console.log("start game");
 
     game = new Game();
-
     game.start();
   }
 
   function handleKeydown(event) {
     const key = event.key;
 
-    console.log("key: ", key);
+    // console.log("key: ", key);
 
     const possibleKeystrokes = ["ArrowLeft", "ArrowUp", "ArrowRight", "ArrowDown"];
 

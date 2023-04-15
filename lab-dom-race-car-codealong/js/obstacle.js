@@ -29,5 +29,4 @@ class Obstacle {
       this.top += 3;
       this.updatePosition();
     }
-
 }
