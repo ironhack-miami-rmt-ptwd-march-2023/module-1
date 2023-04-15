@@ -7,9 +7,10 @@
 
 `getBoundingClientRect()` is a method available in the browser's DOM (Document Object Model) API that returns the size of an element and its position relative to the viewport.
 When called on an element, `getBoundingClientRect()` returns a DOMRect object with properties that describe the element's position and dimensions. These properties include:
-    * `x` and `y`: the coordinates of the top-left corner of the rectangle relative to the viewport.
-    * `width` and `height`: the dimensions of the rectangle.
-    * `top`, `right`, `bottom` and `left`: the distances between the edges of the rectangle and the edges of the viewport.
+- `x` and `y`: the coordinates of the top-left corner of the rectangle relative to the viewport.
+- `width` and `height`: the dimensions of the rectangle.
+-  `top`, `right`, `bottom` and `left`: the distances between the edges of the rectangle and the edges of the viewport.
+
 This method is commonly used in web development to determine the position and size of an element on the screen, so that it can be positioned or manipulated in response to user interactions or other events.
 
 ## Why did we use `Math.random() > 0.98`?
